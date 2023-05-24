@@ -145,3 +145,56 @@
 	color: #422816;
 	font-weight: 600;
 }
+.home_page{
+    padding:1em;
+    background-color:white;
+    width:100%;
+    height: 1000px;
+    border: 1px solid white;
+    border-radius: 35px 35px 0px 0px;
+}
+.title_logo{
+    padding:20px;
+}
+.title_text{
+    padding-top:30px;
+    font-size:32px;
+}
+.sub_title_text{
+    padding:20px;
+    color:#562900;
+}
+.bus_select_btn{
+    display: flex;
+    position: relative;
+    background-color: #FFB836;
+    width: 100%;
+    height: 170px;
+    border: 1px solid #FFB836;
+    border-radius: 2em;
+    cursor : pointer;
+}
+.tap_menu{
+    float:left;
+    margin-left:15%;
+    align-items:center;
+    cursor : pointer;
+}
+.footer{
+    position: fixed;
+    background-color: white;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 80px;
+}
+.bus_select_text{
+    margin-top:22px;
+    margin-left:10px;
+    width:130px;
+    height:130px;
+    display:flex;
+    position: absolute;
+    font-size: 80px
+}
+
