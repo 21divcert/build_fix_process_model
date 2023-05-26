@@ -50,6 +50,7 @@
   }
 </script> -->
 </head>
+<link rel="stylesheet" href="css\style.css">
 <body>
 	<div class="page-loader"></div>
 	<section class="login_section">
@@ -57,41 +58,45 @@
 			<div class="logo">
 				<span><img src="../images/logo.svg"></span>
 			</div>
+            <div class="login_area">
+				<div class="login_title">
+					<p>회원가입</p>
+				</div>
 			<form class="login_box" action="join_process.php" method="POST">
 				<ul class="login_top join_top">
 					<li>
-						<input type="text" name="name" placeholder="이름" required>
+						<input type="text" name="name" placeholder="이름" required class="login_input">
 					</li>
 					<li>
-						<input type="text" name="id" placeholder="아이디" required>
+						<input type="text" name="id" placeholder="아이디" required class="login_input">
 					</li>
 					<li>
-						<input type="email" name="email" placeholder="이메일" required>
+						<input type="email" name="email" placeholder="이메일" required class="login_input">
 					</li>
 					<li>
-						<input type="password" name="pass" placeholder="비밀번호" required>
+						<input type="password" name="pass" placeholder="비밀번호" required class="login_input">
 					</li>
 					<li>
-						<input type="password" name="" placeholder="비밀번호 확인" required>
+						<input type="password" name="" placeholder="비밀번호 확인" required class="login_input">
 					</li>
 					<li>
-						<input type="text" name="school" placeholder="소속 / 학교" required>
+						<input type="text" name="school" placeholder="소속 / 학교" required class="login_input">
 					</li>
-				</ul>
+				</ul> <br>
 				<div class="login_bottom">
 					<div class="login_keep">
-						<p><input type="checkbox" id="myCheck"><label for="myCheck"></label></p>
-						<p><label for="myCheck">서비스에 대한 소식을 이메일로 받아봅니다.</label></p>
+						<div style="float: left;"><input type="checkbox" id="myCheck"><label for="myCheck"></label></div>
+						<div><label for="myCheck">&nbsp;서비스에 대한 소식을 이메일로 받아봅니다.</label></div>
 					</div>
 					<div class="login_keep">
-						<p><input type="checkbox" id="myCheck2"><label for="myCheck2"></label></p>
-						<p><label for="myCheck2">서비스 약관에 동의합니다.</label></p>
-					</div>
-					<div class="login_btn">
-						<input type="submit" name="" value="회원가입">
-					</div>
+						<div style="float: left;"><input type="checkbox" id="myCheck2"><label for="myCheck2"></label></div>
+						<div><label for="myCheck2">&nbsp;서비스 약관에 동의합니다.</label></div>
+					</div> <br>
+					<li>
+						<input type="submit" name="" value="회원가입" class="login_btn">
+                    </li>
 					<div class="login_footer">
-						<p><a href="#">이용약관 | 개인정보처리방침</a></p>
+						<p align="right"><a href="#">이용약관 | 개인정보처리방침</a></p>
 					</div>
 				</div>
 			</form>
