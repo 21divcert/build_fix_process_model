@@ -39,10 +39,10 @@
 
 [저희 주먹구구의 팀원들의 깃허브 계정입니다.]
 
-- [**유예진** / 주먹구구 / 총괄 / 프론트엔드 / <[8_jin](https://github.com/dbdPwls)> / e-mail dbddpwls@naver.com]
-- [**김재형** / 주먹구구 / 기획 / 백엔드 / <[21divcert](https://github.com/21divcert)> e-mail zsx2000@naver.com]
-- [**강민정** / 주먹구구 / 디자인 / 프론트엔드 / <[minjeong0917](https://github.com/dbdPwls)>/ e-mail rkddkwl3414@naver.com]
-- [**남기윤** / 주먹구구 / 개발, QA / 백 엔드 / <[nam-kiyun](https://github.com/nam-kiyun)> / e-mail fordnam1@gmail.com]
+- [**유예진** / 주먹구구 / 팀장 / <[8_jin](https://github.com/dbdPwls)> / e-mail dbddpwls@naver.com]
+- [**김재형** / 주먹구구 / 기획 / <[21divcert](https://github.com/21divcert)> e-mail zsx2000@naver.com]
+- [**강민정** / 주먹구구 / 디자인 / <[minjeong0917](https://github.com/dbdPwls)>/ e-mail rkddkwl3414@naver.com]
+- [**남기윤** / 주먹구구 / 프론트엔드 / <[nam-kiyun](https://github.com/nam-kiyun)> / e-mail fordnam1@gmail.com]
 
 ---
 
