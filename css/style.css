@@ -149,9 +149,9 @@
     padding:1em;
     background-color:white;
     width:100%;
-    height: 1000px;
+    height: 80vh;
     border: 1px solid white;
-    border-radius: 35px 35px 0px 0px;
+    border-radius: 35px 35px 35px 35px;
 }
 .title_logo{
     padding:20px;
@@ -193,6 +193,7 @@
     bottom:0;
     height: 80px;
     z-index: 99999;
+    border-top: 1px solid #dcdcdc;
 }
 .bus_select_text{
     margin-top:22px;
@@ -215,7 +216,7 @@
 .map_wrap{
 	position: relative;
 	width: 100%;
-	height: 850px;
+	height: 735px;
 	
 }
 
@@ -274,4 +275,14 @@
 .bus_down{
     float: right; 
     color:tomato
+}
+.map_810{
+	position: relative;
+	width: 100%;
+	border-radius:20px; 
+	overflow: hidden;
+}
+.map_810>img{
+	position: relative;
+	width: 101%;
 }

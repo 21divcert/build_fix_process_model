@@ -1,14 +1,4 @@
-<?php
-    session_start();
-    if(!isset($_SESSION["user_id"])){
-?>
-        <script>
-            alert("로그인 후 이용해주세요.");
-            location.href='./login/login.php';
-        </script>
-<?php
-    }
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +8,7 @@
    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="css\style.css">
-<body style="background-color:#FFA500; overflow: hidden;">
+<body style="background-color:#FFA500;">
         <div style="display:flex;">
             <p><img src="images\title_logo1.png" class="title_logo"></p>
         </div>
@@ -39,8 +29,10 @@
                 onclick = "document.getElementById('bus1').style.display='none';
                 document.getElementById('fade').style.display='none'"><input type="button" value="닫기" class="close_btn"></a>
                 <div>&nbsp</div>
-                <div style="background-color:black; border-radius:20px; width: 100%; height: 70%;">
-                    <!--지도--></div>
+                <div class="map_810">
+                    <img src="./images/810.gif">
+                </div>
+                <!--지도-->
                 <div class="bus_time">
                     <ul style="line-height: 2em;">
                         <!--810 버스 노선, 도착 예정 시간-->
@@ -78,8 +70,9 @@
                     onclick = "document.getElementById('bus2').style.display='none';
                     document.getElementById('fade').style.display='none'"><input type="button" value="닫기" class="close_btn"></a>
                     <div>&nbsp</div>
-                    <div style="background-image: url("images/820.png"); border-radius:20px; width: 100%; height: 70%;">
-                        <!--지도--></div>
+                    <div class="map_810">
+                    <img src="./images/820.gif">
+                    </div>
                     <div class="bus_time">
                         <ul style="line-height: 2em;">
                             <!--820 버스 노선, 도착 예정 시간-->
@@ -104,11 +97,12 @@
         </div>
         <div class="footer">
             <ul>
-                <li class="tap_menu"><a href=""><img src="images\Home2.png"></a></li>
-                <li class="tap_menu"><a href="map\map.php"><img src="images\Explore.png"></a></li>
-                <li class="tap_menu"><a href=""><img src="images\Frame.png"></a></li>
-                <li class="tap_menu"><a href=""><img src="images\Icon.png"></a></li>
+                <li class="tap_menu"><a href="..\index.php"><img src="..\images\home2.svg"></a></li>
+                <li class="tap_menu"><a href="map\map.php"><img src="..\images\gps.svg"></a></li>
+                <li class="tap_menu"><a href=""><img src="..\images\tag.svg"></a></li>
+                <li class="tap_menu"><a href=""><img src="..\images\user.svg"></a></li>
             </ul>
         </div>
     </body>
 </html>
+
