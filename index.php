@@ -104,7 +104,7 @@
         <div class="footer">
             <ul>
                 <li class="tap_menu"><a href=""><img src="images\Home2.png"></a></li>
-                <li class="tap_menu"><a href="map\maptest.php"><img src="images\Explore.png"></a></li>
+                <li class="tap_menu"><a href="map\map.php"><img src="images\Explore.png"></a></li>
                 <li class="tap_menu"><a href=""><img src="images\Frame.png"></a></li>
                 <li class="tap_menu"><a href=""><img src="images\Icon.png"></a></li>
             </ul>
