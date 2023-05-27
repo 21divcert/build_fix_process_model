@@ -199,10 +199,12 @@
 }
 .map_main{
 	margin: 0 auto;	
-	width:98%;	
-	height:530px;	
+	width:90%;	
+	height:500px;	
 	border-radius:35px;	
 	background-color:black;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .black_overlay{
     display: none;
