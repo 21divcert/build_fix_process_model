@@ -27,8 +27,8 @@
         </div>
         <div class="footer">
             <ul>
-                <li class="tap_menu"><a href="..\index.php"><img src="..\images\Home2.png"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\Explore.png"></a></li>
+                <li class="tap_menu"><a href="..\index.php"><img src="..\images\Home.png"></a></li>
+                <li class="tap_menu"><a href=""><img src="..\images\Explore2.png"></a></li>
                 <li class="tap_menu"><a href=""><img src="..\images\Frame.png"></a></li>
                 <li class="tap_menu"><a href=""><img src="..\images\Icon.png"></a></li>
             </ul>

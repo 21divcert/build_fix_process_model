@@ -39,7 +39,8 @@
                 onclick = "document.getElementById('bus1').style.display='none';
                 document.getElementById('fade').style.display='none'"><input type="button" value="닫기" class="close_btn"></a>
                 <div>&nbsp</div>
-                <div style="background-color:black; border-radius:20px; width: 100%; height: 70%;"><!--지도--></div>
+                <div style="background-color:black; border-radius:20px; width: 100%; height: 70%;">
+                    <!--지도--></div>
                 <div class="bus_time">
                     <ul style="line-height: 2em;">
                         <!--810 버스 노선, 도착 예정 시간-->
@@ -77,7 +78,8 @@
                     onclick = "document.getElementById('bus2').style.display='none';
                     document.getElementById('fade').style.display='none'"><input type="button" value="닫기" class="close_btn"></a>
                     <div>&nbsp</div>
-                    <div style="background-color:black; border-radius:20px; width: 100%; height: 70%;"><!--지도--></div>
+                    <div style="background-image: url("images/820.png"); border-radius:20px; width: 100%; height: 70%;">
+                        <!--지도--></div>
                     <div class="bus_time">
                         <ul style="line-height: 2em;">
                             <!--820 버스 노선, 도착 예정 시간-->
@@ -98,7 +100,6 @@
                     </div>
                 </div>
                     <div id="fade" class="black_overlay"></div>
-                
             </div>
         </div>
         <div class="footer">
