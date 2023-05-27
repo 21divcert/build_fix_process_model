@@ -37,11 +37,11 @@
 <!-- 카카오 스크립트 -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
-Kakao.init('0e2d971d60a7f8f8cfb27620fb24d4b5'); //발급받은 키 중 javascript키를 사용해준다.
+Kakao.init('a1bfedfd24ea1a4bf1ad63d174fae802'); //발급받은 키 중 javascript키를 사용해준다.
 console.log(Kakao.isInitialized()); // sdk초기화여부판단
 let responseData;
 //카카오로그인
-function kakaoLogin() {
+function kakaoLogin() { 
     Kakao.Auth.login({
       success: function (response) {
         Kakao.API.request({
