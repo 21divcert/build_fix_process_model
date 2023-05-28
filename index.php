@@ -1,11 +1,11 @@
-<?php include './weather.php'; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>어쩌다 제주</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<title>어쩌다 제주</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="css\style.css">
 <body style="background-color:#FFA500;">
