@@ -1,4 +1,5 @@
 
+<?php include './weather.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +9,14 @@
    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="css\style.css">
-<body style="background-color:#FFA500;">
-        <div style="display:flex;">
-            <p><img src="images\title_logo1.png" class="title_logo"></p>
+    <section class="full">
+        <header>
+            <p class="logo"><img src="./images/logos.svg"></p>
+            <div class="weather">
+                <p><img src="<?=$imgSrc?>"></p>
+                <p><?=$closestData['temp']."℃"?></p>
+            </div>
+        </header>
         </div>
         <div class="home_page">
             <h1 class="sub_title_text_1">
