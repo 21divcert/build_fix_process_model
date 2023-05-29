@@ -146,12 +146,12 @@
 	font-weight: 600;
 }
 .home_page{
-    padding:1em;
+    padding:20px;
     background-color:white;
     width:100%;
-    height: 80vh;
+    height: 81vh;
     border: 1px solid white;
-    border-radius: 35px 35px 35px 35px;
+    border-radius: 35px 35px 0px 0px;
 }
 .title_logo{
     padding:20px;
@@ -160,8 +160,15 @@
     padding-top:30px;
     font-size:32px;
 }
-.sub_title_text{
+.sub_title_text_1{
     padding:20px;
+    color:#562900;
+}
+
+.sub_title_text_2{
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 20px;
     color:#562900;
 }
 .bus_select_btn{
@@ -171,7 +178,7 @@
     width: 100%;
     height: 170px;
     border: 1px solid #FFB836;
-    border-radius: 2em;
+    border-radius: 35px;
     cursor : pointer;
 }
 .footer>ul{
@@ -219,7 +226,8 @@
 	height: 735px;
 	
 }
-
+/*bus stop time*/
+/*
 .black_overlay{
     display: none;
     position: absolute;
@@ -233,48 +241,105 @@
     opacity:.80;
     filter: alpha(opacity=80);
 }
+*/
 .white_content {
     display: none;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 90%;
+
+    width: 100%;
+    height: 81vh;
+	left : -1px;
     border-radius:35px;
-    padding: 25px;
-    border: 8px solid orange;
+    /*border: 8px solid orange;*/
+	top: 102px;
+	
     background-color: white;
+	border-radius: 35px 35px 0px 0px;
     color:#FFA500;
+	
     z-index:1002;
     overflow: auto;
-}
-::-webkit-scrollbar {
+}::-webkit-scrollbar {
     display: none;
-  }
+}
+.bus_stop_close{
+	padding-top: 25px;
+	padding-right: 35px;
+}
+.bus_location{
+	padding : 10px 25px 25px 25px;
+}
+.white_content>p{
+
+	padding-left :35px;
+	font-size: 32px;
+	font-weight: 600;
+
+}
+
 .close_btn{
     float: right; 
     border: 1px solid orange; 
     border-radius:5px; 
     background-color:white; 
     color:#FFA500; 
-    padding: 3px; 
     cursor:pointer;
+	padding: 3px;
 }
 .bus_time{
     color:black; 
     border-radius:20px; 
     width: 100%; 
     height: 55%; 
-    padding:3%; 
+    padding-top:3%; 
     overflow:auto;
 }
+
+.bus_stop_name{
+	position: relative;
+	display: flex;
+	align-items: center;
+	clear:both; 
+	padding-right :10px;
+	width: 100%;
+	height: 49px;
+
+}
+.busstop_logo{
+	top: 50%;
+	float : left;	
+	padding-right: 10px;
+
+	
+}
+.bus_stop{
+	position :absolute;
+	left : 60px;
+	top :-1px;
+	padding-top: 10px;
+	font-size: 18px;
+
+}
+.busline_logo{
+	position :relative;
+
+	clear:both; 
+	float : left;
+}
 .bus_up{
+	position :absolute;
+	top : -8px;
+	left : 330px;
     float: right; 
-    color:cornflowerblue;
+    color: #486DB4;
 }
 .bus_down{
-    float: right; 
-    color:tomato
+	top: 25px;
+	position :absolute;
+	left : 330px;
+
+	float: right; 
+    color:#ED5D4A
 }
 .map_810{
 	position: relative;
