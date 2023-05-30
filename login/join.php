@@ -79,9 +79,6 @@
 					<li>
 						<input type="password" name="" placeholder="비밀번호 확인" required class="login_input">
 					</li>
-					<li>
-						<input type="text" name="school" placeholder="소속 / 학교" required class="login_input">
-					</li>
 				</ul> <br>
 				<div class="login_bottom">
 					<div class="login_keep">
