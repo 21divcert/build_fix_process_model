@@ -5,7 +5,7 @@
 	$pass = $_POST["user_pw"];
 	$name = $_POST["user_kakao_nick"];
 	$email = $_POST["user_kakao_mail"];
-	$sql = "INSERT INTO user (user_name,user_id,user_password,user_email) VALUES('$id','$pass','$name','$email')";
+	$sql = "INSERT INTO user (user_name,user_id,user_password,user_email) VALUES('$name','$id','$pass','$email')";
 	$result = mysqli_query($connect,$sql);
 	if($result){
 ?>
@@ -21,5 +21,3 @@
 			alert("회원가입에 실패하셨습니다. 다시 시도해주세요.");
 			location.href='./join.php';
 		</script>
-<?php	}
-?>
