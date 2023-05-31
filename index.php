@@ -17,7 +17,6 @@
                 <p><?=$closestData['temp']."℃"?></p>
             </div>
         </header>
-        </div>
         <div class="home_page">
             <h1 class="sub_title_text_1">
                 #동쪽코스
@@ -509,7 +508,7 @@
         <div class="footer">
             <ul>
                 <li class="tap_menu"><a href="..\index.php"><img src="..\images\home2.svg"></a></li>
-                <li class="tap_menu"><a href="map\map.php"><img src="..\images\gps.svg"></a></li>
+                <li class="tap_menu"><a href=".\map.php"><img src="..\images\gps.svg"></a></li>
                 <li class="tap_menu"><a href=""><img src="..\images\tag.svg"></a></li>
                 <li class="tap_menu"><a href=""><img src="..\images\user.svg"></a></li>
             </ul>
