@@ -1,385 +1,405 @@
 @font-face{
-  font-family: 'Inter'; 
-  src: url('../fonts/Pretendard-Medium.otf');
-}
-*{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-	box-sizing: border-box;
-	font-family: 'Inter';
-}
-.full{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-color: #FFA500;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-header{
-	position: relative;
-	width: 80%;
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.login_section{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-}
-.login_wrap{
-	position: relative;
-	width: 85%;
-	height: 100%;
-}
-.logo_area{
-	position: relative;
-	width: 100%;
-	height: 30%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.weather{
-	position: relative;
-	width: 60px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.weather>p>img{
-	width: 80px;
-	
-}
-.weather>p{
-	font-size: 20px;
-	
-}
-.login_area{
-	position: relative;
-	width: 100%;
-	height: 70%;
-}
-.login_title{
-	position: relative;
-	width: 100%;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.login_title>p{
-	font-size: 25px;
-	color: #562900;
-	font-weight: 600;
-}
-.login_area>ul{
-	position: relative;
-	width: 100%;
-	height: 270px;
-}
-.login_area>ul>li{
-	position: relative;
-	width: 100%;
-	height: 50px;
-}
-.login_area>ul>li{
-	margin-bottom: 20px;
-}
-.login_input{
-	position: relative;
-	width: 100%;
-	height: 50px;
-	border: none;
-	border-bottom: 2px solid #562900;
-	outline: none;
-	font-size: 18px;
-	font-weight: 600;
-}
-.login_btn{
-	position: relative;
-	width: 100%;
-	height: 50px;
-	background-color: #562900;
-	font-size: 18px;
-	color: white;
-	font-weight: 600;
-	border: none;
-	border-radius: 8px;
-	cursor: pointer;
-}
-.login_area>ul>li:nth-child(2){
-	margin-bottom: 40px;
-}
-.login_area>ul>li:nth-child(4){
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-}
-.login_area>ul>li>p>a{
-	color: #454545;
-}
-.login_area>i{
-	display: flex;
-	justify-content: center;
-	height: 20px;
-	font-style: normal;
-}
-.login_area>i>span{
-	position: absolute;
-	width: 100%;
-	display: block;
-	border-top: 1px solid #562900;
-	margin-top: 10px;
-}
-.login_area>i>p{
-	position: absolute;
-	z-index: 999;
-	padding: 0px 5px;
-	background-color: white;
-	color: #562900;
-}
-.kakao_login{
-	position: relative;
-	width: 100%;
-	height: 50px;
-	background-color: #FFEB3B;
-	border-radius: 8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 30px;
-}
-.kakao_login>a{
-	display: block;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.kakao_login>a>div{
-	display: flex;
-	align-items: center;
-}
-.kakao_login>a>div>img{
-	margin-right: 5px;
-	width: 25px;
-}
-.kakao_login>a>div>p{
-	color: #422816;
-	font-weight: 600;
-}
-.home_page{
-    padding:20px;
-    background-color:white;
-    width:100%;
-    height: 81vh;
-    border: 1px solid white;
-    border-radius: 35px 35px 0px 0px;
-}
-.title_logo{
-    padding:20px;
-}
-.title_text{
-    padding-top:30px;
-    font-size:32px;
-}
-.sub_title_text_1{
-    padding:20px;
-    color:#562900;
-}
-
-.sub_title_text_2{
-	padding-left: 20px;
-	padding-top: 60px;
-	padding-bottom: 20px;
-    color:#562900;
-}
-.bus_select_btn{
-    display: flex;
-    position: relative;
-    background-color: #FFB836;
-    width: 95%;
-    height: 110px;
-    border: 1px solid #FFB836;
-    border-radius: 35px;
-    cursor : pointer;
-}
-.footer>ul{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-.footer>ul>li>a>img{
-	width: 25px;
-}
-.footer{
-    position: fixed;
-    background-color: white;
-    left:0;
-    right:0;
-    bottom:0;
-    height: 80px;
-    z-index: 99999;
-    border-top: 1px solid #dcdcdc;
-}
-.bus_select_text{
-    width:80px;
-    height:90px;
-    display:flex;
-    /*align-items: center;*/
-    font-size: 80px;
-}
-
-.map_main{
-	width:90%;
-	height:500px;	
-	margin: 0 auto;	
-	border-radius:35px;	
-	padding-bottom: 20px;
-	padding-top: 20px;
-}
-.map_wrap{
-	position: relative;
-	width: 80%;
-	height: 100%;
-}
-/*bus stop time*/
-/*
-.black_overlay{
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index:1001;
-    -moz-opacity: 0.8;
-    opacity:.80;
-    filter: alpha(opacity=80);
-}
-*/
-.white_content {
-    display: none;
-    position: absolute;
-
-    width: 100%;
-    height: 81vh;
-	left : -1px;
-    border-radius:35px;
-    /*border: 8px solid orange;*/
-	top: 102px;
-	
-    background-color: white;
-	border-radius: 35px 35px 0px 0px;
-    color:#FFA500;
-	
-    z-index:1002;
-    overflow: auto;
-}::-webkit-scrollbar {
-    display: none;
-}
-.bus_stop_close{
-	padding-top: 25px;
-	padding-right: 35px;
-}
-.bus_location{
-	padding : 10px 25px 25px 25px;
-}
-.white_content>p{
-
-	padding-left :35px;
-	font-size: 32px;
-	font-weight: 600;
-
-}
-
-.close_btn{
-    float: right; 
-    border: 1px solid orange; 
-    border-radius:5px; 
-    background-color:white; 
-    color:#FFA500; 
-    cursor:pointer;
-	padding: 3px;
-}
-.bus_time{
-    color:black; 
-    border-radius:20px; 
-    width: 100%; 
-    height: 55%; 
-    padding-top:3%; 
-    overflow:auto;
-}
-
-.bus_stop_name{
-	position: relative;
-	display: flex;
-	align-items: center;
-	clear:both; 
-	padding-right :10px;
-	width: 100%;
-	height: 49px;
-
-}
-.busstop_logo{
-	top: 50%;
-	float : left;	
-	padding-right: 10px;
-
-	
-}
-.bus_stop{
-	position :absolute;
-	left : 60px;
-	top :-1px;
-	padding-top: 10px;
-	font-size: 18px;
-
-}
-.busline_logo{
-	position :relative;
-
-	clear:both; 
-	float : left;
-}
-.bus_up{
-	position :absolute;
-	top : -8px;
-	left : 330px;
-    float: right; 
-    color: #486DB4;
-}
-.bus_down{
-	top: 25px;
-	position :absolute;
-	left : 330px;
-
-	float: right; 
-    color:#ED5D4A
-}
-.map_810{
-	position: relative;
-	width: 100%;
-	border-radius:20px; 
-	overflow: hidden;
-}
-.map_810>img{
-	position: relative;
-	width: 101%;
-}
+	font-family: 'Inter'; 
+	src: url('../fonts/Pretendard-Medium.otf');
+  }
+  *{
+	  margin: 0;
+	  padding: 0;
+	  text-decoration: none;
+	  list-style: none;
+	  box-sizing: border-box;
+	  font-family: 'Inter';
+  }
+  .full{
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  background-color: #FFA500;
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  align-items: center;
+  }
+  header{
+	  position: relative;
+	  width: 85%;
+	  height: 120px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .login_section{
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  display: flex;
+	  justify-content: center;
+  }
+  .login_wrap{
+	  position: relative;
+	  width: 85%;
+	  height: 100%;
+  }
+  .logo_area{
+	  position: relative;
+	  width: 100%;
+	  height: 30%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .weather{
+	  position: relative;
+	  width: 60px;
+	  height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .weather>p>img{
+	  width: 40px;
+	  
+  }
+  .weather>p{
+	  font-size: 18px;
+	  
+  }
+  .login_area{
+	  position: relative;
+	  width: 100%;
+	  height: 70%;
+  }
+  .login_title{
+	  position: relative;
+	  width: 100%;
+	  height: 100px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .login_title>p{
+	  font-size: 25px;
+	  color: #562900;
+	  font-weight: 600;
+  }
+  .login_area>ul{
+	  position: relative;
+	  width: 100%;
+	  height: 270px;
+  }
+  .login_area>ul>li{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+  }
+  .login_area>ul>li{
+	  margin-bottom: 20px;
+  }
+  .login_input{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  border: none;
+	  border-bottom: 2px solid #562900;
+	  outline: none;
+	  font-size: 18px;
+	  font-weight: 600;
+  }
+  .login_btn{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #562900;
+	  font-size: 18px;
+	  color: white;
+	  font-weight: 600;
+	  border: none;
+	  border-radius: 8px;
+	  cursor: pointer;
+  }
+  .login_area>ul>li:nth-child(2){
+	  margin-bottom: 40px;
+  }
+  .login_area>ul>li:nth-child(4){
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 0;
+  }
+  .login_area>ul>li>p>a{
+	  color: #454545;
+  }
+  .login_area>i{
+	  display: flex;
+	  justify-content: center;
+	  height: 20px;
+	  font-style: normal;
+  }
+  .login_area>i>span{
+	  position: absolute;
+	  width: 100%;
+	  display: block;
+	  border-top: 1px solid #562900;
+	  margin-top: 10px;
+  }
+  .login_area>i>p{
+	  position: absolute;
+	  z-index: 999;
+	  padding: 0px 5px;
+	  background-color: white;
+	  color: #562900;
+  }
+  .kakao_login{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #FFEB3B;
+	  border-radius: 8px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-top: 30px;
+  }
+  .kakao_login>a{
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .kakao_login>a>div{
+	  display: flex;
+	  align-items: center;
+  }
+  .kakao_login>a>div>img{
+	  margin-right: 5px;
+	  width: 25px;
+  }
+  .kakao_login>a>div>p{
+	  color: #422816;
+	  font-weight: 600;
+  }
+  .main{
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  background-color: white;
+	  border-top-left-radius: 35px;
+	  border-top-right-radius: 35px;
+	  display: flex;
+	  justify-content: center;
+  }
+  .main_wrap{
+	  position: relative;
+	  width: 85%;
+	  height: 100%;
+  }
+  .title{
+	  position: relative;
+	  padding: 40px 0px;
+	  color: #562900;
+	  font-size: 30px;
+	  font-weight: 600;
+  }
+  .bus_list{
+	  position: relative;
+	  width: 100%;
+  }
+  .bus{
+	  position: relative;
+	  width: 100%;
+	  height: 130px;
+	  background-color: #FFB836;
+	  border-radius: 11px;
+	  user-select: none;
+	  cursor:pointer;
+	  display: flex;
+	  justify-content: center;
+  }
+  .bus_wrap{
+	  position: relative;
+	  width: 95%;
+	  height: 100%;
+	  display: flex;
+  }
+  .bus_logo{
+	  position: relative;
+	  width: 80px;
+	  height: 100%;
+	  display: flex;
+	  align-items: center;
+  }
+  .logo>img{
+	  position: relative;
+	  width: 180px;
+  }
+  .bus_logo>img{
+	  position: relative;
+	  width: 80px;
+  }
+  .bus_text{
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  color:black
+  }
+  .bus_text>p:nth-child(1){
+	  font-size: 30px;
+	  font-weight: 600;
+	  padding-top: 20px;
+  }
+  .bus_text>p:nth-child(2){
+	  padding-top: 6px;
+  }
+  footer{
+	  position: fixed;
+	  bottom: 0px;
+	  width: 100%;
+	  height: 70px;
+	  display: flex;
+	  justify-content: center;
+	  border-top: 1px solid #dcdcdc;
+  }
+  .footer_wrap{
+	  position: relative;
+	  width: 80%;
+	  height: 100%;
+  }
+  .footer_wrap>ul{
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .footer_wrap>ul>li>a>img{
+	  width: 25px;
+  }
+  
+  .map_main{
+	  width:90%;
+	  height:500px;	
+	  margin: 0 auto;	
+	  border-radius:35px;	
+	  padding-bottom: 20px;
+	  padding-top: 20px;
+  }
+  .map_wrap{
+	  position: relative;
+	  width: 80%;
+	  height: 100%;
+  }
+  .white_content {
+	  display: none;
+	  position: absolute;
+  
+	  width: 100%;
+	  height: 81vh;
+	  left : -1px;
+	  border-radius:35px;
+	  /*border: 8px solid orange;*/
+	  top: 102px;
+	  
+	  background-color: white;
+	  border-radius: 35px 35px 0px 0px;
+	  color:#FFA500;
+	  
+	  z-index:1002;
+	  overflow: auto;
+  }
+  ::-webkit-scrollbar {
+	  display: none;
+  }
+  .bus_stop_close{
+	  padding-top: 25px;
+	  padding-right: 35px;
+  }
+  .bus_location{
+	  padding : 10px 25px 25px 25px;
+  }
+  .white_content>p{
+  
+	  padding-left :35px;
+	  font-size: 32px;
+	  font-weight: 600;
+  
+  }
+  
+  .close_btn{
+	  float: right; 
+	  border: 1px solid orange; 
+	  border-radius:5px; 
+	  background-color:white; 
+	  color:#FFA500; 
+	  cursor:pointer;
+	  padding: 3px;
+  }
+  .bus_time{
+	  color:black; 
+	  border-radius:20px; 
+	  width: 100%; 
+	  height: 55%; 
+	  padding-top:3%; 
+	  overflow:auto;
+  }
+  
+  .bus_stop_name{
+	  position: relative;
+	  display: flex;
+	  align-items: center;
+	  clear:both; 
+	  padding-right :10px;
+	  width: 100%;
+	  height: 49px;
+  
+  }
+  .busstop_logo{
+	  top: 50%;
+	  float : left;	
+	  padding-right: 10px;
+  
+	  
+  }
+  .bus_stop{
+	  position :absolute;
+	  left : 60px;
+	  top :-1px;
+	  padding-top: 10px;
+	  font-size: 18px;
+  
+  }
+  .busline_logo{
+	  position :relative;
+  
+	  clear:both; 
+	  float : left;
+  }
+  .bus_up{
+	  position :absolute;
+	  top : -8px;
+	  left : 330px;
+	  float: right; 
+	  color: #486DB4;
+  }
+  .bus_down{
+	  top: 25px;
+	  position :absolute;
+	  left : 330px;
+  
+	  float: right; 
+	  color:#ED5D4A
+  }
+  .map_810{
+	  position: relative;
+	  width: 100%;
+	  border-radius:20px; 
+	  overflow: hidden;
+  }
+  .map_810>img{
+	  position: relative;
+	  width: 101%;
+  }
+  
+  
