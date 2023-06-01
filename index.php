@@ -1,14 +1,14 @@
-
 <?php include './weather.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>어쩌다 제주</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <meta charset="utf-8">
+    <title>어쩌다 제주</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="css\style.css">
+<body>
     <section class="full">
         <header>
             <p class="logo"><img src="./images/logos.svg"></p>
@@ -17,26 +17,34 @@
                 <p><?=$closestData['temp']."℃"?></p>
             </div>
         </header>
-        <div class="home_page">
-            <h1 class="sub_title_text_1">
-                #동쪽코스
-            </h1>
-            <a href = "javascript:void(0)" 
-                onclick = "document.getElementById('bus1').style.display='block'; document.getElementById('fade').style.display='block'">
-                <div class="bus_select_btn">
-                    <div class="bus_select_text">
-                        <img src="images\title_logo.png"><div style="color:black"><strong>810</strong></div>
-                    </div>
+        <div class="main">
+            <div class="main_wrap">
+                <div class="title">
+                    <p>#동쪽 코스</p>
                 </div>
-            </a>
-            <div id="bus1" class="white_content">
+            <a href = "javascript:void(0)"
+                onclick = "document.getElementById('bus1').style.display='block';
+                document.getElementById('fade').style.display='block'" >
+                <ul class="bus_list">
+                    <li class="bus">
+                        <div class="bus_wrap">
+                            <div class="bus_logo">
+                                <img src="./images/title_logo.png">
+                            </div>
+                            <div class="bus_text">
+                                <p style="color:black;">810</p>
+                                <p style="color:black;">거슨세미오름 - 거문오름</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </a>
+                <div id="bus1" class="white_content">
                 <div class = "bus_stop_close">
-                    
                     <a href = "javascript:void(0)" 
                     onclick = "document.getElementById('bus1').style.display='none';
                     document.getElementById('fade').style.display='none'"><input type="button" value="닫기" class="close_btn"></a>
                     <div>&nbsp</div>
-                    
                 </div>
                 <p>BUS 810</p>
 
@@ -250,7 +258,7 @@
                             <div class = "bus_stop_name">
                                 <img src ="images\redbus_logo.png"class = "busstop_logo">
                                 <li  style = "position:absolute; left:285px;">출발지 & 종점</li>
-                                <li class ="bus_stop""><strong>대천환승정류장</strong></li>
+                                <li class ="bus_stop"><strong>대천환승정류장</strong></li>
                                 
 
                             </div>
@@ -259,19 +267,28 @@
                 </div>
             </div>
                     <div id="fade" class="black_overlay"></div>
-                
-            <h1 class="sub_title_text_2">
-                #서쪽코스
-            </h1>
-            <a href = "javascript:void(0)" 
-                onclick = "document.getElementById('bus2').style.display='block'; document.getElementById('fade').style.display='block'">
-                <div class="bus_select_btn">
-                    <div class="bus_select_text">
-                        <img src="images\title_logo.png"><div style="color:black"><strong>820</strong></div>
-                    </div>
+
+                <div class="title">
+                    <p>#서쪽 코스</p>
                 </div>
+                <a href = "javascript:void(0)" 
+                onclick = "document.getElementById('bus2').style.display='block'; 
+                document.getElementById('fade').style.display='block'">
+                <ul class="bus_list">
+                    <div class="bus">
+                        <div class="bus_wrap">
+                            <div class="bus_logo">
+                                <img src="./images/title_logo.png">
+                            </div>
+                            <div class="bus_text">
+                                <p style="color:black;">820</p>
+                                <p style="color:black;">테디밸리 골프앤리조트 - 삼밭구석 입구</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
             </a>
-                <div id="bus2" class="white_content">
+            <div id="bus2" class="white_content">
                     <div class = "bus_stop_close">
                         <a href = "javascript:void(0)" 
                         onclick = "document.getElementById('bus2').style.display='none';
@@ -496,23 +513,32 @@
                                 <div class = "bus_stop_name">
                                     <img src ="images\redbus_logo.png"class = "busstop_logo">
                                     <li  style = "position:absolute; left:285px;">출발지 & 종점</li>
-                                    <li class ="bus_stop""><strong>동광환승정류장</strong></li>
+                                    <li class ="bus_stop"><strong>동광환승정류장</strong></li>
                                     
                             </ul>
                         </div>
                     </div>
                 </div>
-                    <div id="fade" class="black_overlay"></div>
             </div>
         </div>
-        <div class="footer">
+    </section>
+    <footer>
+        <div class="footer_wrap">
             <ul>
-                <li class="tap_menu"><a href="..\index.php"><img src="..\images\home2.svg"></a></li>
-                <li class="tap_menu"><a href=".\map.php"><img src="..\images\gps.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\tag.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\user.svg"></a></li>
+                <li>
+                    <a href="..\index.php"><img src="./images/home2.svg"></a>
+                </li>
+                <li>
+                    <a href=".\map.php"><img src="./images/gps.svg"></a>
+                </li>
+                <li>
+                    <a href="./tag.php"><img src="./images/tag.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/user.svg"></a>
+                </li>
             </ul>
         </div>
-    </body>
+    </footer>
+</body>
 </html>
-

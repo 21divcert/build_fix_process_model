@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>어쩌다 제주</title>
+    <link rel="stylesheet" type="text/css" href="./css\style.css">
 </head>
-<link rel="stylesheet" type="text/css" href="./css\style.css">
+<body>
     <section class="full">
         <header>
             <p class="logo"><img src="./images/logos.svg"></p>
@@ -14,7 +15,7 @@
                 <p><?=$closestData['temp']."℃"?></p>
             </div>
         </header>
-        <div class="home_page">
+        <div class="main">
             <div class="map_wrap">
             <div class="map_main" id="map" style="width:100%;height:75vh;margin: 0;border-radius: 35px; padding-bottom: 20px; padding-top: 20px;"></div>
                 <!--지도 화면-->
@@ -39,7 +40,7 @@
                             lon = position.coords.longitude; // 경도
                         
                         var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다             
-                            message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다           
+                            message = '<div style="padding:현재 나의 위치?!</div>'; // 인포윈도우에 표시될 내용입니다           
                                         
                         // 마커와 인포윈도우를 표시합니다
                         displayMarker(locPosition, message);
@@ -81,15 +82,24 @@
                 </script>
             </div>
         </div>
-        <div class="footer">
-            <ul>
-                <li class="tap_menu"><a href="..\index.php"><img src="..\images\home.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\gps2.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\tag.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\user.svg"></a></li>
+    </section>
+    <footer>
+        <div class="footer_wrap">
+        <ul>
+                <li>
+                    <a href="..\index.php"><img src="./images/home2.svg"></a>
+                </li>
+                <li>
+                    <a href=".\map.php"><img src="./images/gps.svg"></a>
+                </li>
+                <li>
+                    <a href="./tag.php"><img src="./images/tag.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/user.svg"></a>
+                </li>
             </ul>
         </div>
-    </body>
+    </footer>
+</body>
 </html>
-
-
