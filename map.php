@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>어쩌다 제주</title>
+    <link rel="stylesheet" type="text/css" href="./css\style.css">
 </head>
-<link rel="stylesheet" type="text/css" href="./css\style.css">
+<body>
     <section class="full">
         <header>
             <p class="logo"><img src="./images/logos.svg"></p>
@@ -14,7 +15,7 @@
                 <p><?=$closestData['temp']."℃"?></p>
             </div>
         </header>
-        <div class="home_page">
+        <div class="main">
             <div class="map_wrap">
             <div class="map_main" id="map" style="width:100%;height:75vh;margin: 0;border-radius: 35px; padding-bottom: 20px; padding-top: 20px;"></div>
                 <!--지도 화면-->
@@ -81,15 +82,24 @@
                 </script>
             </div>
         </div>
-        <div class="footer">
+        </section>
+    <footer>
+        <div class="footer_wrap">
             <ul>
-                <li class="tap_menu"><a href="..\index.php"><img src="..\images\home.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\gps2.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\tag.svg"></a></li>
-                <li class="tap_menu"><a href=""><img src="..\images\user.svg"></a></li>
+                <li>
+                    <a href="..\index.php"><img src="./images/home2.svg"></a>
+                </li>
+                <li>
+                    <a href=".\map.php"><img src="./images/gps.svg"></a>
+                </li>
+                <li>
+                    <a href="./tag.php"><img src="./images/tag.svg"></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/user.svg"></a>
+                </li>
             </ul>
         </div>
-    </body>
+    </footer>
+</body>
 </html>
-
-
