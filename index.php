@@ -535,7 +535,7 @@
                     <a href="./tag.php"><img src="./images/tag.svg"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/user.svg"></a>
+                    <a href="./mypage.php"><img src="./images/user.svg"></a>
                 </li>
             </ul>
         </div>
