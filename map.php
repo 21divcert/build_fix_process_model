@@ -82,21 +82,21 @@
                 </script>
             </div>
         </div>
-    </section>
+        </section>
     <footer>
         <div class="footer_wrap">
-        <ul>
+            <ul>
                 <li>
-                    <a href="..\index.php"><img src="./images/home2.svg"></a>
+                    <a href="..\index.php"><img src="./images/home.svg"></a>
                 </li>
                 <li>
-                    <a href=".\map.php"><img src="./images/gps.svg"></a>
+                    <a href=".\map.php"><img src="./images/gps2.svg"></a>
                 </li>
                 <li>
                     <a href="./tag.php"><img src="./images/tag.svg"></a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/user.svg"></a>
+                    <a href="./mypage.php"><img src="./images/user.svg"></a>
                 </li>
             </ul>
         </div>
