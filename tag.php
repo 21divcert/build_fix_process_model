@@ -1,3 +1,4 @@
+
 <?php
     
     $servername = "localhost";
@@ -10,115 +11,123 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql = "SELECT thumbnailpath, title, adress FROM visitjeju";
+    $sql = "SELECT thumbnailpath, title, adress, tag FROM visitjeju";
     
+
     
 ?>
+<?php include './weather.php'; ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-        }
-        section{
-            position: relative;
-            width: 100%;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-        }
-        .list_wrap{
-            position: relative;
-            width: 90%;
-            height: 100%;
-        }
-        ul{
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        ul>li{
-            position: relative;
-            width: 100%;
-            height: 140px;
-            display: flex;
-            background-color: #FFF4E3;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-        .image_area{
-            position: relative;
-            width: 30%;
-            max-width: 140px;
-            min-width: 140px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .text_area{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            padding-left: 10px;
-        }
-        .text_area>p:nth-child(1){
-            font-size: 20px;
-            font-weight: 600;
-            color: #562900;
-            padding-top: 20px;
-        }
-        .text_area>p:nth-child(2){
-            font-size: 15px;
-            color: #562900;
-        }
-        .image_area>p{
-            position: relative;
-            width: 120px;
-            height: 120px;
-            border-radius: 15px;
-            overflow: hidden;
-        }
-        .image_area>p>img{
-            position: relative;
-            width: 200px;
-            
-        }
-    </style>
+    <title>어쩌다 제주</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script type = "text/javascript" src = "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./tag.js"></script>
+
 </head>
 <body>
-    <section>
-        <div class="list_wrap">
-            <ul>
-                <?php
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo '<li>';
-            echo '<div class="image_area">';
-            echo '<p><img src="' . htmlspecialchars($row['thumbnailpath']) . '"></p>';
-            echo '</div>';
-            echo '<div class="text_area">';
-            echo '<p>' . htmlspecialchars($row['title']) . '</p>';
-            echo '<p>' . htmlspecialchars($row['adress']). '</p>';
-            echo '</div>';
-            echo '</li>';
-        }
-    } else {
-        echo "0 results";
-    }
-    $conn->close();
-?>
+    <section class="full">
+        <header>
+            <p class="logo"><img src="./images/logos.svg"></p>
+            <div class="weather">
+                <p><img src="<?=$imgSrc?>"></p>
+                <p><?=$closestData['temp']."℃"?></p>
+            </div>
+        </header>
 
-            </ul>
+        <div class="main">
+            <div class = "main_wrap">
+
+                <div class="title">
+                    <p># 태그 선택</p>  
+                </div>
+                <div class = "HashTag">
+                    <ul>
+                        <li class = "list" >#전체</li>
+                        <li class = "list" >#럭셔리트래블인제주</li>
+                        <li class = "list" >#반려동물동반입장</li>
+                        <li class = "list" >#무장애관광</li>
+                        <li class = "list" >#공영관광지</li>
+                        <li class = "list" >#안전여행스탬프</li>
+                        <li class = "list" >#웰니스</li>
+                        <li class = "list" >#실내관광지</li>
+                        <li class = "list" >#오름</li>
+                        <li class = "list" >#포토스팟</li>
+                        <li class = "list" >#숲</li>
+                        <li class = "list" >#마을관광</li>
+                        <li class = "list" >#곶자왈</li>
+                        <li class = "list" >#유네스코</li>
+                        <li class = "list" >#올레</li>
+                        <li class = "list" >#지질트레일</li>
+                        <li class = "list" >#한라산</li>
+                        <li class = "list" >#언택트</li>
+                    </ul>
+                </div>
+                
+                
+                <div class ="title2">
+                    <p><img src ="./images/location.png">&nbsp;추천 관광지</p>
+                </div>
+
+                <div class="list_wrap">
+                    
+                    <ul>
+                        
+                        <?php
+                        $result = $conn->query($sql);
+                        if ($result->num_rows > 0) {
+                            while($row = $result->fetch_assoc()) {
+                                echo '<li>';
+                                echo '<div class="image_area">';
+                                echo '<p><img src="' . htmlspecialchars($row['thumbnailpath']) . '"></p>';
+                                echo '</div>';
+                                echo '<div class="texttag_area">';
+                                echo '<div class="text_area">';
+                                echo '<p>' . htmlspecialchars($row['title']) . '</p>';
+                                echo '<p><img src="./images/small_location.png">&nbsp;' . htmlspecialchars($row['adress']). '</p>';
+                                echo '</div>';
+                                echo '<div class="tag_area">';
+                                $tag_list = explode(",", $row['tag']);
+                                echo '<p>#' . htmlspecialchars($tag_list[0])  . '</p>';
+                                echo '<p>#' . htmlspecialchars($tag_list[1])  . '</p>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '</li>';
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+                        $conn->close();
+
+                        ?>
+
+                    </ul>
+                    
+                </div>
+            </div>
         </div>
     </section>
+    <footer>
+        <div class="footer_wrap">
+            <ul>
+                <li>
+                    <a href="..\index.php"><img src="./images/home.svg"></a>
+                </li>
+                <li>
+                    <a href=".\map.php"><img src="./images/gps.svg"></a>
+                </li>
+                <li>
+                    <a href="./tag.php"><img src="./images/tag2.svg"></a>
+                </li>
+                <li>
+                    <a href="./mypage.php"><img src="./images/user.svg"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
