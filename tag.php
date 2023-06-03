@@ -74,9 +74,7 @@
                 </div>
 
                 <div class="list_wrap">
-                    
                     <ul>
-                        
                         <?php
                         $result = $conn->query($sql);
                         if ($result->num_rows > 0) {
@@ -104,9 +102,7 @@
                         $conn->close();
 
                         ?>
-
                     </ul>
-                    
                 </div>
             </div>
         </div>
