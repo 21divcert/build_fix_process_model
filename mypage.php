@@ -18,7 +18,16 @@
             </header>
             <div class="main">
                 <div class="main_wrap">
-
+                    <div class="profile_wrap">
+                        <div class="profile_box">
+                            <img class="profile" src="/images/profile.png">
+                        </div>
+                        <div class="profile_name">
+                            <p>
+                                홍길동
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
