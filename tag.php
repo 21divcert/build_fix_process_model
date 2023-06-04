@@ -90,8 +90,14 @@
                                 echo '</div>';
                                 echo '<div class="tag_area">';
                                 $tag_list = explode(",", $row['tag']);
-                                echo '<p>#' . htmlspecialchars($tag_list[0])  . '</p>';
-                                echo '<p>#' . htmlspecialchars($tag_list[1])  . '</p>';
+                                for ($i=0; $i<=5; $i +=1){
+                                    $isEmpty = empty($tag_list[$i]);
+                                    if ($isEmpty){
+                                        continue;
+                                    }
+                                    echo '<p>#' . htmlspecialchars($tag_list[$i])  . '</p>';
+                                }
+
                                 echo '</div>';
                                 echo '</div>';
                                 echo '</li>';
