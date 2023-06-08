@@ -3,9 +3,9 @@
 	$connect = mysqli_connect("localhost","root","3220","ajdb");
 	$id = $_POST["user_id"];
 	$pass = $_POST["user_pw"];
-	$name = $_POST["user_kakao_nick"];
 	$email = $_POST["user_kakao_mail"];
-	$sql = "INSERT INTO user (user_name,user_id,user_password,user_email) VALUES('$id','$pass','$name','$email')";
+	$name = $_POST["user_kakao_nick"];
+	$sql = "INSERT INTO user (user_id,user_pw,user_kakao_mail,user_kakao_nick) VALUES('$id','$pass','$email','$name')";
 	$result = mysqli_query($connect,$sql);
 	if($result){
 ?>
