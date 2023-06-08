@@ -48,6 +48,8 @@
                 <div class = "HashTag">
                     <ul>
                         <li class = "list" >#전체</li>
+                        <li class = "list" >#810</li>
+                        <li class = "list" >#820</li>
                         <li class = "list" >#럭셔리트래블인제주</li>
                         <li class = "list" >#반려동물동반입장</li>
                         <li class = "list" >#무장애관광</li>
@@ -79,7 +81,7 @@
                         $result = $conn->query($sql);
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
-                                echo '<li>';
+                                echo '<li id="contents">';
                                 echo '<div class="image_area">';
                                 echo '<p><img src="' . htmlspecialchars($row['thumbnailpath']) . '"></p>';
                                 echo '</div>';
@@ -105,11 +107,20 @@
                         } else {
                             echo "0 results";
                         }
-                        $conn->close();
+                        
 
                         ?>
                     </ul>
                 </div>
+            </div>
+            <div id="popup" class="popup_white_content">
+                    <div class = "intro_title">
+                        <div class = "btn_intro_close">
+                            <input type="button" value="닫기" class="close_btn">
+                        </div>
+                        <p>이름</p>
+
+                    </div>
             </div>
         </div>
     </section>
