@@ -1,20 +1,24 @@
 <?php
-    
-    $servername = "localhost";
-    $username = "root";
-    $password = "3220";
-    $dbname = "ajdb";
 
-    
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+$servername = "localhost";
+$username = "root";
+$password = "3220";
+$dbname = "ajdb";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT tag_name FROM tag ORDER BY RAND() LIMIT 10";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo "<a href='?tag=" . urlencode($row["tag_name"]) . "'>" . $row["tag_name"] . "</a><br>";
     }
-    $sql = "SELECT thumbnailpath, title, adress FROM visitjeju";
-    
-    
+}
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -98,25 +102,30 @@
         <div class="list_wrap">
             <ul>
                 <?php
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo '<li>';
-            echo '<div class="image_area">';
-            echo '<p><img src="' . htmlspecialchars($row['thumbnailpath']) . '"></p>';
-            echo '</div>';
-            echo '<div class="text_area">';
-            echo '<p>' . htmlspecialchars($row['title']) . '</p>';
-            echo '<p>' . htmlspecialchars($row['adress']). '</p>';
-            echo '</div>';
-            echo '</li>';
-        }
-    } else {
-        echo "0 results";
-    }
-    $conn->close();
-?>
-
+                if (isset($_GET["tag"])) {
+                    $tag = $_GET["tag"];
+                    $sql = "SELECT * FROM visitjeju WHERE tag LIKE '%" . $tag . "%'";
+                    $result = $conn->query($sql);
+                
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo '<li>';
+                            echo '<div class="image_area">';
+                            echo '<p><img src="' . htmlspecialchars($row['thumbnailpath']) . '"></p>';
+                            echo '</div>';
+                            echo '<div class="text_area">';
+                            echo '<p>' . htmlspecialchars($row['title']) . '</p>';
+                            echo '<p>' . htmlspecialchars($row['adress']). '</p>';
+                            echo '</div>';
+                            echo '</li>';
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                }
+                
+                $conn->close();
+                ?>
             </ul>
         </div>
     </section>
