@@ -10,12 +10,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT tag_name FROM tag ORDER BY RAND() LIMIT 10";
+$sql = "SELECT contenttscd_name FROM contenttscd ORDER BY RAND() LIMIT 10";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "<a href='?tag=" . urlencode($row["tag_name"]) . "'>" . $row["tag_name"] . "</a><br>";
+        echo "<a href='?contenttscd=" . urlencode($row["contenttscd_name"]) . "'>" . $row["contenttscd_name"] . "</a><br>";
     }
 }
 ?>
@@ -102,9 +102,9 @@ if ($result->num_rows > 0) {
         <div class="list_wrap">
             <ul>
                 <?php
-                if (isset($_GET["tag"])) {
-                    $tag = $_GET["tag"];
-                    $sql = "SELECT * FROM visitjeju WHERE tag LIKE '%" . $tag . "%'";
+                if (isset($_GET["contenttscd"])) {
+                    $contenttscd = $_GET["contenttscd"];
+                    $sql = "SELECT * FROM visitjeju WHERE contenttscd LIKE '%" . $contenttscd . "%'";
                     $result = $conn->query($sql);
                 
                     if ($result->num_rows > 0) {
