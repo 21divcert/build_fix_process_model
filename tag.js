@@ -7,3 +7,17 @@ $(document).ready(function(){
     })
     
 })
+
+
+$(document).ready(function() {
+
+    $("#contents").click(function() {
+        $("#popup").fadeIn();
+
+    });
+    $(".close_btn").click(function() {
+        $("#popup").fadeOut();
+
+    });
+
+});
