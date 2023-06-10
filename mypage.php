@@ -35,13 +35,13 @@
             <div class="footer_wrap">
                 <ul>
                     <li>
-                        <a href="..\index.php"><img src="./images/home.svg"></a>
+                        <a href="./index.php"><img src="./images/home.svg"></a>
                     </li>
                     <li>
-                        <a href=".\map.php"><img src="./images/gps.svg"></a>
+                        <a href="./map.php"><img src="./images/gps.svg"></a>
                     </li>
                     <li>
-                        <a href="./tag.php"><img src="./images/tag.svg"></a>
+                        <a href="./tag.php?tag=축제/행사"><img src="./images/tag.svg"></a>
                     </li>
                     <li>
                         <a href="./mypage.php"><img src="./images/user2.svg"></a>

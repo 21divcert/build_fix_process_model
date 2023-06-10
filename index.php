@@ -533,7 +533,7 @@
                     <a href=".\map.php"><img src="./images/gps.svg"></a>
                 </li>
                 <li>
-                    <a href="./tag.php"><img src="./images/tag.svg"></a>
+                    <a href="./tag.php?tag=축제/행사"><img src="./images/tag.svg"></a>
                 </li>
                 <li>
                     <a href="./mypage.php"><img src="./images/user.svg"></a>

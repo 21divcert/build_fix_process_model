@@ -1,15 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "3220";
-$dbname = "ajdb";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include "../lib/mysql.php";
 $sql = "SELECT contenttscd_name FROM contenttscd ORDER BY RAND() LIMIT 10";
 $result = $conn->query($sql);
 
