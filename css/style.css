@@ -781,6 +781,7 @@
 .tour_title>p{
 	font-size: 25px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	
 }
@@ -792,11 +793,14 @@
 .tour_loc{
 	position: relative;
 	color: #562900;
+	padding-left:5px;
+    align-items: center;
+
 
 }
 .tour_loc>p{
 	color: #562900;
-	font-size: 18px;
+
 }
 .tour_loc>img{
 	position: relative;
@@ -805,26 +809,56 @@
 .tour_info_box{
 	position: relative;
 	width: 100%;
-	height: 40%;
+	font-size: 18px;
 	overflow: auto;
 
 
+}
+
+.tour_location_box{
+    display: flex;
+    align-items: center;
+	padding-bottom:10px;
+	padding-top:10px;
+
+}
+.tour_location_box>p>img{
+	width: 14px;
+	height: 21px;
 }
 .tour_info_box>p{
 	padding-top: 10px;
+	padding-bottom: 10px;
+
 	overflow: auto;
+}
+.tour_tagList{
+	position: relative;
+	padding: 8px;
+	background-color: #FFC760;
+	border-radius: 6px;
+	font-size: 15px;
+	color: #562900;
+
+	font-weight: 600;
+    letter-spacing: 1px;
+    white-space : nowrap;
 }
 .tour_info_text{
 	color: #562900;
-	font-size: 15px;
+	font-size: 16px;
 	overflow: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 150%
+
 }
 .tour_close_btn{
-	position: absolute;
+	position: relative;
 	width: 100%;
-	bottom: 0;
+	/* bottom: 0; */
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	
 
 	
