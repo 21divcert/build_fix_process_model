@@ -38,7 +38,7 @@ if (isset($_GET['tag'])) {
             echo '<ul class="tag_list">';
             $tagList = explode(',', $tag);
             foreach ($tagList as $tagItem) {
-                echo '<li><p>' . $tagItem . '</p></li>';
+                echo '<li><p>#' . $tagItem . '</p></li>';
             }
             echo '</ul>';
             echo '</div>';
