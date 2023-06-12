@@ -44,8 +44,19 @@
         <li id="CS2" data-order="5"> 
             <span class="category_bg store"></span>
             편의점
-        </li>      
+        </li>
+          
     </ul>
+</div>
+<div class="map_wrap" style="position: relative;">
+    <div id="map" class="w-screen h-screen">    
+      <button id="810_location_button" class="location_btn_810" onclick="panTo()">
+        <strong>810</strong>
+      </button> <br><br>
+      <button id="820_location_button" class="location_btn_820" onclick="panTo2()">
+        <strong>820</strong>
+      </button>
+    </div>
 </div>
                 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a1bfedfd24ea1a4bf1ad63d174fae802&libraries=services"></script>
                 <script>
@@ -53,10 +64,31 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 4 // 지도의 확대 레벨 
+        level: 7 // 지도의 확대 레벨 
     }; 
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+//if(lat <= MAXLAT && lat >= MINLAT && lng >= MINLNG && lng <= MAXLNG) Map.setCenter(new kakaoAPI.LatLng(lat, lng))
+//주석 풀면 위치로 이동하는데 다른 기능이 안된다
+
+function panTo() {
+// 이동할 위도 경도 위치를 생성합니다 
+var moveLatLon = new kakao.maps.LatLng(33.489929, 126.796991);
+    
+// 지도 중심을 부드럽게 이동시킵니다
+// 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+map.panTo(moveLatLon);            
+}   
+
+function panTo2() {
+// 이동할 위도 경도 위치를 생성합니다 
+var moveLatLon = new kakao.maps.LatLng(33.313077, 126.302418);
+    
+// 지도 중심을 부드럽게 이동시킵니다
+// 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+map.panTo(moveLatLon);            
+}       
 
 // HTML5의 geolocation으로 사용할 수 있는지 확인합니다 
 if (navigator.geolocation) {

@@ -80,6 +80,7 @@
                 <div class="bus_time">
                     <ul>
                         <!--810 버스 노선, 도착 예정 시간-->
+                        <div class="bus_info_sys" onclick="location.href='https://bus.jeju.go.kr/search/realTimeBusLocation'">버스 정보 시스템 바로가기</div>
                         <div class = "bus_stop_name">
                             <img src ="images\bus_logo.png"class = "busstop_logo">
                             <p>출발지 & 종점</p>
@@ -306,6 +307,7 @@
                 <div class="bus_time">
                     <ul>
 
+                        <div class="bus_info_sys" onclick="location.href='https://bus.jeju.go.kr/search/realTimeBusLocation'">버스 정보 시스템 바로가기</div>
                         <div class = "bus_stop_name">
                             <img src ="images\bus_logo.png"class = "busstop_logo">
                             <p>출발지 & 종점</p>
