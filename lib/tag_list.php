@@ -15,9 +15,9 @@ if ($result) {
     while ($row = mysqli_fetch_assoc($result)) {
         $content = $row['contenttscd_name'];
         if ($content === $selectedTag) {
-            echo '<li><p>' . $content . '</p></li>';
+            echo '<li><p>#' . $content . '</p></li>';
         } else { 
-            echo '<li><a href="?tag=' . $content . '"><p>' . $content . '</p></a></li>';
+            echo '<li><a href="?tag=' . $content . '"><p>#' . $content . '</p></a></li>';
         }
     }
     mysqli_free_result($result);
