@@ -1,6 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		  *{
+	  margin: 0;
+	  padding: 0;
+	  text-decoration: none;
+	  list-style: none;
+	  box-sizing: border-box;
+	  font-family: 'Inter';
+  }
+  .full{
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  background-color: #FFA500;
+	  display: flex;
+	  justify-content: center;
+	  flex-direction: column;
+	  align-items: center;
+  }
+  header{
+	  position: relative;
+	  width: 85%;
+	  /* height: 100%; */
+	  padding-top: 20px;
+	  padding-bottom: 15px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .login_section{
+	  position: relative;
+	  width: 100%;
+	  height: 100vh;
+	  display: flex;
+	  justify-content: center;
+  }
+  .login_wrap{
+	  position: relative;
+	  width: 85%;
+	  height: 100%;
+  }
+  .logo_area{
+	  position: relative;
+	  width: 100%;
+	  height: 30%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .weather{
+	  position: relative;
+	  width: 60px;
+	  height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .weather>p>img{
+	  width: 40px;
+	  
+  }
+  .weather>p{
+	  font-size: 18px;
+	  
+  }
+  .login_area{
+	  position: relative;
+	  width: 100%;
+	  height: 70%;
+  }
+  .login_title{
+	  position: relative;
+	  width: 100%;
+	  height: 100px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .login_title>p{
+	  font-size: 25px;
+	  color: #562900;
+	  font-weight: 600;
+  }
+  .login_area>ul{
+	  position: relative;
+	  width: 100%;
+	  height: 270px;
+  }
+  .login_area>ul>li{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+  }
+  .login_area>ul>li{
+	  margin-bottom: 20px;
+  }
+  .login_input{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  border: none;
+	  border-bottom: 2px solid #562900;
+	  outline: none;
+	  font-size: 18px;
+	  font-weight: 600;
+  }
+  .login_btn{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #562900;
+	  font-size: 18px;
+	  color: white;
+	  font-weight: 600;
+	  border: none;
+	  border-radius: 8px;
+	  cursor: pointer;
+  }
+  .login_area>ul>li:nth-child(2){
+	  margin-bottom: 40px;
+  }
+  .login_area>ul>li:nth-child(4){
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 0;
+  }
+  .login_area>ul>li>p>a{
+	  color: #454545;
+  }
+  .login_area>i{
+	  display: flex;
+	  justify-content: center;
+	  height: 20px;
+	  font-style: normal;
+  }
+  .login_area>i>span{
+	  position: absolute;
+	  width: 100%;
+	  display: block;
+	  border-top: 1px solid #562900;
+	  margin-top: 10px;
+  }
+  .login_area>i>p{
+	  position: absolute;
+	  z-index: 999;
+	  padding: 0px 5px;
+	  background-color: white;
+	  color: #562900;
+  }
+  .kakao_login{
+	  position: relative;
+	  width: 100%;
+	  height: 50px;
+	  background-color: #FFEB3B;
+	  border-radius: 8px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-top: 30px;
+  }
+  .kakao_login>a{
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .kakao_login>a>div{
+	  display: flex;
+	  align-items: center;
+  }
+  .kakao_login>a>div>img{
+	  margin-right: 5px;
+	  width: 25px;
+  }
+  .kakao_login>a>div>p{
+	  color: #422816;
+	  font-weight: 600;
+  }
+  .logo_area{
+	  position: relative;
+	  width: 100%;
+	  height: 30%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+	</style>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,7 +245,7 @@
 	<div class="page-loader"></div>
 	<section class="login_section">
 		<div class="login_wrap">
-			<div class="logo">
+			<div class="logo_area">
 				<span><img src="../images/logo.svg"></span>
 			</div>
             <div class="login_area">
