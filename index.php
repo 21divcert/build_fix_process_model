@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["user_id"])){
+?>
+        <script>
+            alert("로그인 후 이용해주세요.");
+            location.href='./login/login.php';
+        </script>
+<?php
+    }
+?>
 <?php include './weather.php'; ?>
 <!DOCTYPE html>
 <html>
