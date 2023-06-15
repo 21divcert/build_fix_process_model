@@ -255,7 +255,7 @@
 			<form class="login_box" action="join_process.php" method="POST">
 				<ul class="login_top join_top">
 					<li>
-						<input type="text" name="name" placeholder="이름" required class="login_input">
+						<input type="text" name="name2" placeholder="이름" required class="login_input">
 					</li>
 					<li>
 						<input type="text" name="id" placeholder="아이디" required class="login_input">
